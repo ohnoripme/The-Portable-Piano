@@ -1,0 +1,79 @@
+#keyboard {
+    margin: 0 auto;
+    width: 675px;
+}
+
+.key {
+    border: 1px solid black;
+    border-right: none;
+    display: inline-block;
+    height: 200px;
+    width: 45px;
+}
+
+.key:first-of-type {
+    border-bottom-left-radius: 5px;
+}
+.key:last-of-type {
+    border-right: 1px solid black;
+    border-bottom-right-radius: 5px;
+}
+
+.key:hover {
+    cursor: pointer;
+}
+
+.key-black {
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 130px;
+    width: 25px;
+    left: 32px;
+    z-index: 1;
+
+    /* black keys inherit inline-block from .key, but
+    this throws the keyboard layout away */
+    display: block;
+
+    position: relative;
+}
+
+.key-black-mouseover {
+    background-color: #565656;
+}
+
+.key-depressed {
+    box-shadow: 0 -5px 15px #4d4d4d inset;
+}
+
+.key-black.mouseover {
+    background-color: #565656;
+}
+
+.key-depressed {
+    box-shadow: 0 -5px 15px #4d4d4d inset;
+}
+
+.key-white.mouseover {
+    background-color: #dedddd;
+}
+
+
+/* Buttons and Messages*/
+.button {
+    margin: 15px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    padding-bottom: 20px;
+}

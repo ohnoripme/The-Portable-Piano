@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pitchHunt</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="ET.css">
+    <script defer src="simpleTones/simpleTones.js"></script>
+    <script defer src="javascript.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="piano.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="Theory.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Theory</a>
+      <a href="ET.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ear Training</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      </div>
+    </div>
+    <div class="modal" id="tooSmallMessageModal">
+        <div class="modal-background">
+        </div>
+        <div class="model-content">
+            <div class="notification is-primary">
+                <p class="has-text-centered is-size-3">
+                    pitchHunt works better on desktop. <br /> <a class="is-primary button is-inverted" id="userAcceptedSmallScreen">OK</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="keyboard">
+    </div>
+    <div class="level">
+        <div class="level-item">
+            <a class="button hide is-outlined is-success" id="newGame">New Game</a>
+            <a class="button is-outlined is-link" id="playTone">Play Tone</a>
+        </div>
+    </div>
+    <div class="level is-mobile">
+        <div class="level-item">
+            <div id="messageDiv" class="is-size-5">
+                <p class="title has-text-centered is-2">
+                    pitchHunt!
+                </p>
+                <p class="has-text-centered subtitle is-4">
+                    Turn up your volume!
+                </p>
+                <p class="has-text-centered">Press play tone
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+
+  #keyboard {
+    margin: 0 auto;
+    width: 675px;
+}
+
+.key {
+    border: 1px solid black;
+    border-right: none;
+    display: inline-block;
+    height: 200px;
+    width: 45px;
+}
+
+.key:first-of-type {
+    border-bottom-left-radius: 5px;
+}
+.key:last-of-type {
+    border-right: 1px solid black;
+    border-bottom-right-radius: 5px;
+}
+
+.key:hover {
+    cursor: pointer;
+}
+
+.key-black {
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 130px;
+    width: 25px;
+    left: 32px;
+    z-index: 1;
+
+    /* black keys inherit inline-block from .key, but
+    this throws the keyboard layout away */
+    display: block;
+
+    position: relative;
+}
+
+.key-black-mouseover {
+    background-color: #565656;
+}
+
+.key-depressed {
+    box-shadow: 0 -5px 15px #4d4d4d inset;
+}
+
+.key-black.mouseover {
+    background-color: #565656;
+}
+
+.key-depressed {
+    box-shadow: 0 -5px 15px #4d4d4d inset;
+}
+
+.key-white.mouseover {
+    background-color: #dedddd;
+}
+
+
+/* Buttons and Messages*/
+.button {
+    margin: 15px;
+    color: black;
+}
+
+
+.hide {
+    display: none;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    padding-bottom: 20px;
+}
+ body {
+   background-color: white;
+ }
+</style>

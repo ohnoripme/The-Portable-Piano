@@ -1,0 +1,28 @@
+/*body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+
+   background-color: navyblue;
+ }
+
+.parallax {
+  /* The image used */
+  background-image: url("sheet_music.jpg");
+}
+
+{  /* Set a specific height */
+  height: 400px;
+}
+
+{  Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+body
+  {
+    background-color: #80A9EB;
+  }
